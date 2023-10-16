@@ -37,6 +37,15 @@
             bindings = <&mo 1>, <&to 1>;
         };
     };
+    behaviors {
+        upper: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UPPER_LAYER_TAP_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 2>, <&to 2>;
+        };
+    };
 
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro_0 {
