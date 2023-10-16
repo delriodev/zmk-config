@@ -26,16 +26,15 @@
 / {
     /* Glove80 system behavior & macros */
     behaviors {
-        // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
-        // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
         lower: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "LOWER_LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&to 1>;
-        };
-        
+        };        
+    };
+    behaviors {
         upper: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "UPPER_LAYER_TAP_DANCE";
@@ -43,7 +42,8 @@
             tapping-term-ms = <200>;
             bindings = <&mo 2>, <&to 2>;
         };
-        
+    };
+    behaviors {
         open_par: open_parentheses {
             compatible = "zmk,behavior-mod-morph";
             label = "OPEN_PARENTHESES";
@@ -51,6 +51,8 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
             mods = <(MOD_LSFT)>;
         };
+    };
+    behaviors {
         close_par: close_parentheses {
             compatible = "zmk,behavior-mod-morph";
             label = "CLOSE_PARENTHESES";
@@ -58,6 +60,8 @@
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
             mods = <(MOD_LSFT)>;
         };
+    };
+    behaviors {
         equals: equals {
             compatible = "zmk,behavior-mod-morph";
             label = "EQUALS";
@@ -65,6 +69,8 @@
             bindings = <&kp EQUAL>, <&kp GREATER_THAN>;
             mods = <(MOD_LSFT)>;
         }
+    };
+    behaviors {
         dashes: dashes {
             compatible = "zmk,behavior-mod-morph";
             label = "DASHES";
@@ -72,6 +78,8 @@
             bindings = <&kp UNDERSCORE>, <&kp MINUS>;
             mods = <(MOD_LSFT)>;
         }
+    };
+    behaviors {
         bars: bars {
             compatible = "zmk,behavior-mod-morph";
             label = "BARS";
@@ -79,6 +87,8 @@
             bindings = <&kp QUESTION>, <&kp EXCLAMATION>
             mods = <(MOD_LSFT)>;
         }
+    };
+    behaviors {
         commas: commas {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMAS";
@@ -86,6 +96,8 @@
             bindings = <&kp COMMA>, <&kp SEMICOLON>
             mods = <(MOD_LSFT)>;
         }
+    };
+    behaviors {
         periods: periods {
             compatible = "zmk,behavior-mod-morph";
             label = "PERIODS";
@@ -93,6 +105,8 @@
             bindings = <&kp PERIOD>, <&kp COLON>
             mods = <(MOD_LSFT)>;
         }
+    };
+    behaviors {
         at: at {
             compatible = "zmk,behavior-mod-morph";
             label = "AT";
@@ -100,6 +114,8 @@
             bindings = <&kp AT>, <&kp POUND>
             mods = <(MOD_LSFT)>;
         }
+    };
+    behaviors {
         left: left {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT";
@@ -107,6 +123,8 @@
             bindings = <&kp LEFT>, <&kp HOME>
             mods = <(MOD_LALT)>;
         }
+    };
+    behaviors {
         right: right {
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHT";
@@ -114,6 +132,8 @@
             bindings = <&kp RIGHT>, <&kp END>
             mods = <(MOD_LALT)>;
         }
+    };
+    behaviors {
         up: up {
             compatible = "zmk,behavior-mod-morph";
             label = "UP";
@@ -121,6 +141,8 @@
             bindings = <&kp UP>, <&kp PG_UP>
             mods = <(MOD_LALT)>;
         }
+    };
+    behaviors {
         down: down {
             compatible = "zmk,behavior-mod-morph";
             label = "DOWN";
@@ -193,20 +215,6 @@
         bindings = <&mo>, <&rgb_ug_status_macro>;
     };
 
-    /* Custom Defined Behaviors */
-
-/* The physical shape of my keyboard after removing keys :
-
-    &magic 2 0 &kp CAPS &none    &none    &none                                                                                            &none &none   &none    &none      
-                                                                                                                                                                             
-    &upper     &kp Q    &kp G    &kp M    &kp L     &kp W                                                                           &kp B  &kp Y &kp U   &kp V    &at        
-    &lower     &kp D    &kp S    &kp T    &kp N     &kp R                                                                           &kp I  &kp A &kp E   &kp O    &kp H      
-    &kp TAB    &kp Z    &kp X    &kp C    &kp F     &kp J  &mt LCTRL RET   &kp LGUI ESC  &none        &bars   &kp APOS   &dashes    &kp K  &kp P &commas &periods &kp C_AC_SAVE           
-               &up      &down    &left    &right           &mt LSHFT SPACE &kp BACKSPACE &mt LALT DEL &equals &open_par  &close_par                                          
-
-C_AC_(CUT|COPY|PASTE|UNDO|REDO|)
-*/
-    
     keymap {
         compatible = "zmk,keymap";
 
