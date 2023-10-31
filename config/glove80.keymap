@@ -164,9 +164,9 @@
         };
     };
     behaviors {
-        chars_fr:  {
+        chars_fr: chars_fr {
             compatible = "zmk,behavior-mod-morph";
-            label = "";
+            label = "CHARS_FR";
             #binding-cells = <0>;
             bindings = <&kp CARET>, <&kp CARET>;
             mods = <(MOD_LSFT)>;
