@@ -159,16 +159,16 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ACCENTS";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE>, <&kp >;
+            bindings = <&kp GRAVE>, <&kp CARET>;
             mods = <(MOD_LSFT)>;
         };
     };
     behaviors {
-        :  {
+        chars_fr:  {
             compatible = "zmk,behavior-mod-morph";
             label = "";
             #binding-cells = <0>;
-            bindings = <&kp >, <&kp >;
+            bindings = <&kp CARET>, <&kp CARET>;
             mods = <(MOD_LSFT)>;
         };
     };
