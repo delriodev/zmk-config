@@ -172,20 +172,11 @@ at: at {
     mods = <(MOD_LSFT)>;
 };
 
-    
-bools: bools {
-    compatible = "zmk,behavior-mod-morph";
-    label = "BOOLS";
-    #binding-cells = <0>;
-    bindings = <&kp AMPERSAND>, <&kp PIPE>;
-    mods = <(MOD_LSFT)>;
-};
-    
 commas: commas {
     compatible = "zmk,behavior-mod-morph";
     label = "COMMAS";
     #binding-cells = <0>;
-    bindings = <&kp COMMA>, <&kp SEMICOLON>;
+    bindings = <&kp FR_COMM>, <&kp FR_SCLN>;
     mods = <(MOD_LSFT)>;
 };
     
@@ -193,7 +184,7 @@ periods: periods {
     compatible = "zmk,behavior-mod-morph";
     label = "PERIODS";
     #binding-cells = <0>;
-    bindings = <&kp PERIOD>, <&kp COLON>;
+    bindings = <&kp FR_DOT>, <&kp FR_COLN>;
     mods = <(MOD_LSFT)>;
 };
 
