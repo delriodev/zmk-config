@@ -30,61 +30,11 @@
     behaviors {
         #include "behaviors.dtsi"
     };
+    
+    macros {
+        #include "macros.dtsi"
+    };
         
-    macros {
-        rgb_ug_status_macro: rgb_ug_status_macro_0 {
-            label = "RGB_UG_STATUS";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&rgb_ug RGB_STATUS>;
-        };
-    };
-
-    macros {
-        bt_0: bt_profile_macro_0 {
-            label = "BT_0";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 0>;
-        };
-    };
-
-    macros {
-        bt_1: bt_profile_macro_1 {
-            label = "BT_1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 1>;
-        };
-    };
-
-    macros {
-        bt_2: bt_profile_macro_2 {
-            label = "BT_2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 2>;
-        };
-    };
-
-    macros {
-        bt_3: bt_profile_macro_3 {
-            label = "BT_3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 3>;
-        };
-    };
-
     magic: magic_hold_tap {
         compatible = "zmk,behavior-hold-tap";
         label = "MAGIC_HOLD_TAP";
@@ -93,9 +43,6 @@
         tapping-term-ms = <200>;
         bindings = <&mo>, <&rgb_ug_status_macro>;
     };
-
-    /* Custom Defined Behaviors */
-
 
     /* Automatically generated keymap */
     keymap {
@@ -108,7 +55,7 @@
     &none      &none    &none    &none            &none          &none                                                                                   &none  &none                &none        &none                &none         &none
     &kp TAB    &kp Q    &kp G    &kp M            &kp L          &kp W                                                                                   &kp B  &kp Y                &kp U        &kp V                &at           &none
     &none      &kp D    &kp S    &kp T            &kp N          &kp R                                                                                   &kp I  &kp A                &kp E        &kp O                &kp H         &none
-    &upper     &kp Z    &kp X    &kp C            &kp F          &kp J  &mt LCTRL RET   &mt LGUI ESC  &none        &marks     &apos    &dashes           &kp K  &kp P                &commas      &periods             &accents      &none
+    &upper     &kp Z    &kp X    &kp C            &kp F          &kp J  &mt LCTRL RET   &mt LGUI ESC  &none        &marks     &apos    &dashes_plus      &kp K  &kp P                &commas      &periods             &accents      &none
     &lower     &left    &down    &up              &right                &mt LSHFT SPACE &kp BACKSPACE &mt LALT DEL &brackets  &braces  &parentheses             &slashes             &arrows      &bools               &chars_fr     &none
             >;
         };

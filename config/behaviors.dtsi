@@ -40,6 +40,13 @@ dashes: dashes {
     bindings = <&kp EQUAL>, <&kp UNDERSCORE>;
     mods = <(MOD_LSFT)>;
 };
+dashes_plus: dashes_plus {
+    compatible = "zmk,behavior-mod-morph";
+    label = "dashes";
+    #binding-cells = <0>;
+    bindings = <&dashes>, <&kp MINUS>;
+    mods = <(MOD_LALT)>;
+};
     
 brackets: brackets {
     compatible = "zmk,behavior-mod-morph";
@@ -96,13 +103,6 @@ slashes: slashes {
     #binding-cells = <0>;
     bindings = <&kp SLASH>, <&kp BACKSLASH>;
     mods = <(MOD_LSFT)>;
-};
-slashes_plus: slashes_plus {
-    compatible = "zmk,behavior-mod-morph";
-    label = "SLASHES";
-    #binding-cells = <0>;
-    bindings = <&slashes>, <&kp MINUS>;
-    mods = <(MOD_LALT)>;
 };
     
 arrows: arrows {
