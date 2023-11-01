@@ -29,7 +29,7 @@
 
     behaviors {
         #include "behaviors.dtsi"
-    }
+    };
         
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro_0 {
