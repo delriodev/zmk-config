@@ -122,7 +122,24 @@ apos: apos {
     bindings = <&apos2>, <&kp FR_CIRC>;
     mods = <(MOD_LALT)>;
 };
-    
+
+// key lshift rshift alt
+//  /     \     -     
+slashes1: slashes1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "slASHES1";
+    #binding-cells = <0>;
+    bindings = <&kp FR_SLSH>, <&kp FR_BSLS>;
+    mods = <(MOD_LSFT)>;
+};
+slashes: slashes {
+    compatible = "zmk,behavior-mod-morph";
+    label = "SLASHES";
+    #binding-cells = <0>;
+    bindings = <&slashes1>, <&kp FR_PIPE>;
+    mods = <(MOD_RSFT)>;
+};
+
 at: at {
     compatible = "zmk,behavior-mod-morph";
     label = "AT";
@@ -131,7 +148,6 @@ at: at {
     mods = <(MOD_LSFT)>;
 };
 
-    
     
 bools: bools {
     compatible = "zmk,behavior-mod-morph";
