@@ -27,8 +27,8 @@
 / {
     /* Glove80 system behavior & macros */
 
-    behaviours {
-        #include "behaviours.dtsi"
+    behaviors {
+        #include "behaviors.dtsi"
     }
         
     macros {
