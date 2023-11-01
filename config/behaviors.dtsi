@@ -124,10 +124,10 @@ apos: apos {
 };
 
 // key lshift rshift alt
-//  /     \     -     
+//  /     \     |     
 slashes1: slashes1 {
     compatible = "zmk,behavior-mod-morph";
-    label = "slASHES1";
+    label = "SLASHES1";
     #binding-cells = <0>;
     bindings = <&kp FR_SLSH>, <&kp FR_BSLS>;
     mods = <(MOD_LSFT)>;
@@ -138,6 +138,30 @@ slashes: slashes {
     #binding-cells = <0>;
     bindings = <&slashes1>, <&kp FR_PIPE>;
     mods = <(MOD_RSFT)>;
+};
+
+// key lshift rshift alt
+//  é     ç     ¨     ~
+french1: french1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "french1";
+    #binding-cells = <0>;
+    bindings = <&kp FR_RPRN>, <&kp FR_RCBR>;
+    mods = <(MOD_LSFT)>;
+};
+french2: french2 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "french2";
+    #binding-cells = <0>;
+    bindings = <&french1>, <&kp FR_RBRC>;
+    mods = <(MOD_RSFT)>;
+};
+french: french {
+    compatible = "zmk,behavior-mod-morph";
+    label = "french";
+    #binding-cells = <0>;
+    bindings = <&french2>, <&kp FR_RABK>;
+    mods = <(MOD_LALT)>;
 };
 
 at: at {
@@ -164,17 +188,6 @@ accents: accents {
     bindings = <&kp GRAVE>, <&kp CARET>;
     mods = <(MOD_LSFT)>;
 };
-    
-chars_fr: chars_fr {
-    compatible = "zmk,behavior-mod-morph";
-    label = "CHARS_FR";
-    #binding-cells = <0>;
-    bindings = <&kp CARET>, <&kp CARET>;
-    mods = <(MOD_LSFT)>;
-};
-    
-    
-    
     
 commas: commas {
     compatible = "zmk,behavior-mod-morph";
