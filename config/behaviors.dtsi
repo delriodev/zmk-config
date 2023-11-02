@@ -19,25 +19,25 @@ upper: tap_dance_1 {
 
 // key lshift rshift alt
 //  (     {     [     <
-open1: open1 {
+open_one: open1 {
     compatible = "zmk,behavior-mod-morph";
     label = "OPEN1";
     #binding-cells = <0>;
     bindings = <&kp FR_LPRN>, <&kp FR_LCBR>;
     mods = <(MOD_LSHFT)>;
 };
-open2: open2 {
+open_two: open2 {
     compatible = "zmk,behavior-mod-morph";
     label = "OPEN2";
     #binding-cells = <0>;
-    bindings = <&open1>, <&kp FR_LBRC>;
+    bindings = <&open_one>, <&kp FR_LBRC>;
     mods = <(MOD_RSHFT)>;
 };
 open: open {
     compatible = "zmk,behavior-mod-morph";
     label = "OPEN";
     #binding-cells = <0>;
-    bindings = <&open2>, <&kp FR_LABK>;
+    bindings = <&open_two>, <&kp FR_LABK>;
     mods = <(MOD_LALT)>;
 };
 
