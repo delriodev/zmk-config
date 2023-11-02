@@ -1,10 +1,10 @@
 ZMK_UNICODE_PAIR(CCed,		FR_N0, FR_N0,    E, FR_N7,		FR_N0, FR_N0,    C, FR_N7)	// ç/Ç
-// ZMK_UNICODE_PAIR(EAig,		FR_N0, FR_N0,    E, FR_N9,		FR_N0, FR_N0,    C, FR_N9)	// é/É
-// ZMK_UNICODE_PAIR(LfPLfB,	FR_N0, FR_N0, FR_N2, FR_N8,		FR_N0, FR_N0, FR_N5,    B)	// ({
-// ZMK_UNICODE_PAIR(RgPRgB,	FR_N0, FR_N0, FR_N2, FR_N9,		FR_N0, FR_N0, FR_N5,    D) // 
+ZMK_UNICODE_PAIR(EAig,		FR_N0, FR_N0,    E, FR_N9,		FR_N0, FR_N0,    C, FR_N9)	// é/É
+ZMK_UNICODE_PAIR(LfPLfB,	FR_N0, FR_N0, FR_N2, FR_N8,		FR_N0, FR_N0, FR_N5,    B)	// ({
+ZMK_UNICODE_PAIR(RgPRgB,	FR_N0, FR_N0, FR_N2, FR_N9,		FR_N0, FR_N0, FR_N5,    D) // 
 
-// ZMK_UNICODE_SINGLE(Inf,		FR_N0, FR_N0, FR_N3,    C) 							// <
-// ZMK_UNICODE_SINGLE(Sup,		FR_N0, FR_N0, FR_N3,    E) 							// >
-// ZMK_UNICODE_SINGLE(BakQut,	FR_N0, FR_N0, FR_N6, FR_N0) 							// `
+ZMK_UNICODE_SINGLE(Inf,		FR_N0, FR_N0, FR_N3,    C) 							// <
+ZMK_UNICODE_SINGLE(Sup,		FR_N0, FR_N0, FR_N3,    E) 							// >
+ZMK_UNICODE_SINGLE(BakQut,	FR_N0, FR_N0, FR_N6, FR_N0) 							// `
 
 #define ccc xxx
