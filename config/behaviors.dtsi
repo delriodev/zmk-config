@@ -41,46 +41,46 @@ open: open {
     mods = <(MOD_LALT)>;
 };
 
-// key lshift rshift alt
-//  )     }     ]     >
-close1: close1 {
-    compatible = "zmk,behavior-mod-morph";
-    label = "CLOSE1";
-    #binding-cells = <0>;
-    bindings = <&kp FR_RPRN>, <&kp FR_RCBR>;
-    mods = <(MOD_LSHFT)>;
-};
-close2: close2 {
-    compatible = "zmk,behavior-mod-morph";
-    label = "CLOSE2";
-    #binding-cells = <0>;
-    bindings = <&close1>, <&kp FR_RBRC>;
-    mods = <(MOD_RSHFT)>;
-};
-close: close {
-    compatible = "zmk,behavior-mod-morph";
-    label = "CLOSE";
-    #binding-cells = <0>;
-    bindings = <&close2>, <&kp FR_RABK>;
-    mods = <(MOD_LALT)>;
-};
+// // key lshift rshift alt
+// //  )     }     ]     >
+// close1: close1 {
+//     compatible = "zmk,behavior-mod-morph";
+//     label = "CLOSE1";
+//     #binding-cells = <0>;
+//     bindings = <&kp FR_RPRN>, <&kp FR_RCBR>;
+//     mods = <(MOD_LSHFT)>;
+// };
+// close2: close2 {
+//     compatible = "zmk,behavior-mod-morph";
+//     label = "CLOSE2";
+//     #binding-cells = <0>;
+//     bindings = <&close1>, <&kp FR_RBRC>;
+//     mods = <(MOD_RSHFT)>;
+// };
+// close: close {
+//     compatible = "zmk,behavior-mod-morph";
+//     label = "CLOSE";
+//     #binding-cells = <0>;
+//     bindings = <&close2>, <&kp FR_RABK>;
+//     mods = <(MOD_LALT)>;
+// };
 
-// key lshift rshift alt
-//  ?     !     &     
-mark1: mark1 {
-    compatible = "zmk,behavior-mod-morph";
-    label = "MARK1";
-    #binding-cells = <0>;
-    bindings = <&kp FR_QUES>, <&kp FR_EXLM>;
-    mods = <(MOD_LSHFT)>;
-};
-mark: mark {
-    compatible = "zmk,behavior-mod-morph";
-    label = "MARK";
-    #binding-cells = <0>;
-    bindings = <&mark1>, <&kp FR_AMPR>;
-    mods = <(MOD_RSHFT)>;
-};
+// // key lshift rshift alt
+// //  ?     !     &     
+// mark1: mark1 {
+//     compatible = "zmk,behavior-mod-morph";
+//     label = "MARK1";
+//     #binding-cells = <0>;
+//     bindings = <&kp FR_QUES>, <&kp FR_EXLM>;
+//     mods = <(MOD_LSHFT)>;
+// };
+// mark: mark {
+//     compatible = "zmk,behavior-mod-morph";
+//     label = "MARK";
+//     #binding-cells = <0>;
+//     bindings = <&mark1>, <&kp FR_AMPR>;
+//     mods = <(MOD_RSHFT)>;
+// };
 
 marks: marks {
     compatible = "zmk,behavior-mod-morph";
