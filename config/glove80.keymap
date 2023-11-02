@@ -37,7 +37,7 @@ base_layer {
      &none      &none     &none    &none    &none     &none                                                                                      &none    &none    &none     &none    &none    &none
      &kp TAB    &kp FR_Q  &kp FR_G &kp FR_M &kp FR_L  &kp FR_W                                                                                   &kp FR_B &kp FR_Y &kp FR_U  &kp FR_V &at      &none
      &upper     &kp FR_D  &kp FR_S &kp FR_T &kp FR_N  &kp FR_R                                                                                   &kp FR_I &kp FR_A &kp FR_E  &kp FR_O &kp FR_H &none
-     &lower     &kp FR_Z  &kp FR_X &kp FR_C &kp FR_F  &kp FR_J  &mt LCTRL FR_ESC   &mt LGUI DEL        &none          &slashes  &apos   &dashes  &kp FR_K &kp FR_P &commas   &periods &french  &none
+     &lower     &kp FR_Z  &kp FR_X &kp FR_C &kp FR_F  &kp FR_J  &mt LCTRL FR_ESC   &mt LGUI DEL        &none          &slashes  &apos   &dashes  &kp FR_K &kp FR_P &commas   &periods &french_e  &none
      &none      &left     &down    &up      &right              &mt LSHFT FR_SPACE &mt RSHFT BACKSPACE &mt LALT RET   &mark     &open   &close            &none    &math     &none    &none    &none
             >;
         };
@@ -48,7 +48,7 @@ base_layer {
       &none  &none &none &none &none &none                                                &none  &none    &none    &none    &none  &none       
       &none  &none &none &none &none &none                                                &none  &kp FR_N7 &kp FR_N8 &kp FR_N9 &none  &none      
       &none  &none &none &none &none &none                                                &none  &kp FR_N4 &kp FR_N5 &kp FR_N6 &none  &none      
-      &to 0  &none &none &none &none &none &trans &trans &trans   &none  &none  &none     &none  &kp FR_N1 &kp FR_N2 &kp FR_N3 &none  &none      
+      &to 0  &none &none &none &none &none &trans &trans &trans   &none  &none  &none     &none  &kp FR_N1 &kp FR_N2 &kp FR_N3 &french_c  &none      
       &none  &none &none &none &none       &trans &trans &trans   &none  &none  &none            &none    &kp FR_N0 &none    &none  &none         
             >;
         };
