@@ -6,7 +6,6 @@
 #include "keys_fr.h"
 #include "helper.h"
 #include <french_unicode.dtsi>
-#include "french_unicode.dtsi"
 #include <behaviors.dtsi>
 
 / {

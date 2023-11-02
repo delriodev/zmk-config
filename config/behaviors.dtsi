@@ -1,3 +1,12 @@
+ZMK_UNICODE_PAIR(CCed,		FR_0, FR_0,    E, FR_7,		FR_0, FR_0,    C, FR_7)	// ç/Ç
+ZMK_UNICODE_PAIR(EAig,		FR_0, FR_0,    E, FR_9,		FR_0, FR_0,    C, FR_9)	// é/É
+ZMK_UNICODE_PAIR(LfPLfB,	FR_0, FR_0, FR_2, FR_8,		FR_0, FR_0, FR_5,    B)	// ({
+ZMK_UNICODE_PAIR(RgPRgB,	FR_0, FR_0, FR_2, FR_9,		FR_0, FR_0, FR_5,    D) // 
+
+ZMK_UNICODE_SINGLE(Inf,		FR_0, FR_0, FR_3,    C) 							// <
+ZMK_UNICODE_SINGLE(Sup,		FR_0, FR_0, FR_3,    E) 							// >
+ZMK_UNICODE_SINGLE(BakQut,	FR_0, FR_0, FR_6, FR_0) 							// `
+
 // hold or toggle layer 1   
 lower: tap_dance_0 {
     compatible = "zmk,behavior-tap-dance";
