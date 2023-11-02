@@ -50,12 +50,12 @@
 #define FR_LPRN N5    // (
 #define FR_LCBR RA(FR_QUOT) // {
 #define FR_LBRC RA(FR_LPRN) // [
-#define FR_LABK STAR // <
+#define FR_LABK RA(LS(Z)) // <
 
-#define FR_RPRN MINUS // )
-#define FR_RCBR RA(FR_EQL)  // }
+#define FR_RPRN N2 // )
+#define FR_RCBR N9  // }
 #define FR_RBRC RA(FR_RPRN) // ]
-#define FR_RABK LS(FR_LABK) // >
+#define FR_RABK RA(LS(X)) // >
 
 #define FR_QUES LS(FR_COMM) // ?
 #define FR_EXLM SLASH // !
