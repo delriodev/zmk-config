@@ -211,7 +211,7 @@ periods: periods {
     label = "PERIODS";
     #binding-cells = <0>;
     bindings = <&kp FR_DOT>, <&kp FR_COLN>;
-    mods = <(MOD_LSHFT)>;
+    mods = <(MOD_LSFT)>;
 };
 
 left: left {
@@ -247,6 +247,12 @@ down: down {
 };  
 
     
+
+
+
+
+
+
 dashes_plus: dashes_plus {
     compatible = "zmk,behavior-mod-morph";
     label = "dashes";
