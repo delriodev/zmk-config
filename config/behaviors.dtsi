@@ -72,14 +72,14 @@ mark_one: mark_one {
     label = "MARK_ONE";
     #binding-cells = <0>;
     bindings = <&kp FR_QUES>, <&kp FR_EXLM>;
-    mods = <(MOD_LSHFT)>;
+    mods = <(MOD_LSFT)>;
 };
 mark: mark {
     compatible = "zmk,behavior-mod-morph";
     label = "MARK";
     #binding-cells = <0>;
     bindings = <&mark_one>, <&kp FR_AMPR>;
-    mods = <(MOD_RSHFT)>;
+    mods = <(MOD_RSFT)>;
 };
 
 marks: marks {
