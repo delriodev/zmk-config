@@ -51,34 +51,34 @@
 
         base_layer {
             bindings = <
-     &magic 2 0 &kp CAPS &none &none &none                                                                                                 &none &none   &none    &none &none
-     &none      &none    &none &none &none  &none                                                                                    &none &none &none   &none    &none &none
-     &kp TAB    &kp Q    &kp G &kp M &kp L  &kp W                                                                                    &kp B &kp Y &kp U   &kp V    &none &none
-     &none      &kp D    &kp S &kp T &kp N  &kp R                                                                                    &kp I &kp A &kp E   &kp O    &kp H &none
-     &upper     &kp Z    &kp X &kp C &kp F  &kp J  &mt LCTRL ESC   &mt LGUI DEL        &none        &marks     &apos    &dashes_plus &kp K &kp P &commas &periods &none &none
-     &lower     &left    &down &up   &right        &mt LSHFT SPACE &mt RSHFT BACKSPACE &mt LALT RET &brackets  &braces  &parentheses       &none &none   &none    &none &none
+    &magic 2 0 &kp CAPS &kp C_AC_SAVE    &kp C_AC_REFRESH &kp C_AC_CLOSE                                                                                        &kp C_AL_SELECT_TASK &kp C_AL_WWW &kp C_AL_TEXT_EDITOR &none         &none
+    &none      &none    &none    &none            &none          &none                                                                                   &none  &none                &none        &none                &none         &none
+    &kp TAB    &kp Q    &kp G    &kp M            &kp L          &kp W                                                                                   &kp B  &kp Y                &kp U        &kp V                &at           &none
+    &none      &kp D    &kp S    &kp T            &kp N          &kp R                                                                                   &kp I  &kp A                &kp E        &kp O                &kp H         &none
+    &upper     &kp Z    &kp X    &kp C            &kp F          &kp J  &mt LCTRL RET   &mt LGUI ESC  &none        &marks     &apos    &dashes_plus      &kp K  &kp P                &commas      &periods             &accents      &none
+    &lower     &left    &down    &up              &right                &mt LSHFT SPACE &kp BACKSPACE &mt LALT DEL &brackets  &braces  &parentheses             &slashes             &arrows      &bools               &chars_fr     &none
             >;
         };
 
         layer_Lower {
             bindings = <
-      &trans &none &none &none &none                                                                &none  &none  &none  &none  &none       
-      &none  &none &none &none &none &none                                                &none     &none  &none  &none  &none       &none
-      &none  &none &none &none &none &none                                                &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS   &none
-      &none  &none &none &none &none &none                                                &kp STAR  &kp N4 &kp N5 &kp N6 &kp SLASH   &none
-      &to 0  &none &none &none &none &none &trans &trans &trans   &none  &none  &kp MINUS &kp EQUAL &kp N1 &kp N2 &kp N3 &kp PERCENT &none
-      &none  &none &none &none &none       &trans &trans &trans   &none  &none  &none               &kp PERCENT &kp N0 &none  &none  &none        
+     &trans &none &none                &none                &none                                                                                        &none      &none   &none   &none    &none
+     &none  &none &none                &none                &none          &none                                                              &none      &none   &none   &none    &none       &none
+     &none  &none &kp C_AC_SEARCH      &kp C_AC_INSERT      &kp C_AC_CUT   &kp C_AC_COPY                                                      &kp PLUS   &kp N7  &kp N8  &kp N9   &kp MINUS   &none
+     &none  &none &kp C_AC_GOTO        &kp C_AC_VIEW_TOGGLE &none          &kp C_AC_PASTE                                                     &kp STAR   &kp N4  &kp N5  &kp N6   &kp SLASH   &none
+     &to 0  &none &kp C_AC_SCROLL_UP   &kp C_AC_FIND        &kp C_AC_EXIT  &none          &trans &trans &trans   &none  &none  &kp MINUS      &kp EQUAL  &kp N1  &kp N2  &kp N3   &kp PERCENT &none
+     &none  &none &kp C_AC_SCROLL_DOWN &none                &none                         &trans &trans &trans   &none  &none  &none                     &kp PERCENT  &kp N0  &none   &none    &none            
             >;
         };
 
         layer_Upper {
             bindings = <
-      &trans &none &none      &none      &none                                                                       &kp PRINTSCREEN &none  &none  &none &none
-      &none  &none &none      &none      &none        &none                                                   &trans &none           &none  &none  &none &none
-      &none  &none &kp C_PREV &kp C_NEXT &kp C_PP     &kp C_VOL_UP                                            &none  &kp F7          &kp F8 &kp F9 &none &none
-      &to 0  &none &none      &none      &kp C_BRI_UP &kp C_VOL_DN                                            &none  &kp F4          &kp F5 &kp F6 &none &none
-      &none  &none &none      &none      &kp C_BRI_DN &kp C_MUTE   &trans &trans &trans  &none  &none   &none &none  &kp F1          &kp F2 &kp F3 &none &none
-      &none  &none &none      &none      &none                  &trans &trans &trans  &none  &none   &none           &none           &none  &none  &none &none
+        &trans &none  &none       &none      &none                                                                               &kp PRINTSCREEN &none   &none   &none   &none
+        &none  &none  &none       &none      &none        &none                                                          &trans  &none           &none   &none   &none   &none
+        &none  &none  &kp C_PREV  &kp C_NEXT &kp C_PP     &kp C_VOL_UP                                                   &kp F10 &kp F11         &kp F12 &kp F13 &kp F14 &none
+        &to 0  &none  &none       &none      &kp C_BRI_UP &kp C_VOL_DN                                                   &kp F5  &kp F6          &kp F7  &kp F8  &kp F9  &none
+        &none  &none  &none       &none      &kp C_BRI_DN &kp C_MUTE   &trans &trans &trans  &none  &none   &none       &kp F1  &kp F2          &kp F3  &kp F4  &none   &none
+        &none  &none  &none       &none      &none                     &trans &trans &trans  &none  &none   &none       &none           &none   &none   &none   &none
             >;
         };
 
