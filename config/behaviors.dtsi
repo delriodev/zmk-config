@@ -43,25 +43,25 @@ open: open {
 
 // key lshift rshift alt
 //  )     }     ]     >
-close1: close1 {
+close_one: close_one {
     compatible = "zmk,behavior-mod-morph";
-    label = "CLOSE1";
+    label = "CLOSE_ONE";
     #binding-cells = <0>;
     bindings = <&kp FR_RPRN>, <&kp FR_RCBR>;
-    mods = <(MOD_LSHFT)>;
+    mods = <(MOD_LSFT)>;
 };
-close2: close2 {
+close_two: close_two {
     compatible = "zmk,behavior-mod-morph";
-    label = "CLOSE2";
+    label = "CLOSE_ONE";
     #binding-cells = <0>;
-    bindings = <&close1>, <&kp FR_RBRC>;
-    mods = <(MOD_RSHFT)>;
+    bindings = <&close_one>, <&kp FR_RBRC>;
+    mods = <(MOD_RSFT)>;
 };
 close: close {
     compatible = "zmk,behavior-mod-morph";
     label = "CLOSE";
     #binding-cells = <0>;
-    bindings = <&close2>, <&kp FR_RABK>;
+    bindings = <&close_two>, <&kp FR_RABK>;
     mods = <(MOD_LALT)>;
 };
 
