@@ -41,4 +41,3 @@ bt_3: bt_profile_macro_3 {
         = <&out OUT_BLE>,
           <&bt BT_SEL 3>;
 };
-
