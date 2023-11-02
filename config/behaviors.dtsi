@@ -1,3 +1,4 @@
+#include "keys_fr.h"
 
 // hold or toggle layer 1   
 lower: tap_dance_0 {
@@ -19,27 +20,27 @@ upper: tap_dance_1 {
 
 // key lshift rshift alt
 //  (     {     [     <
-// open_one: open_one {
-//     compatible = "zmk,behavior-mod-morph";
-//     label = "OPEN_ONE";
-//     #binding-cells = <0>;
-//     bindings = <&kp FR_LPRN>, <&kp FR_LCBR>;
-//     mods = <(MOD_LSHFT)>;
-// };
-// open_two: open_two {
-//     compatible = "zmk,behavior-mod-morph";
-//     label = "OPEN_TWO";
-//     #binding-cells = <0>;
-//     bindings = <&open_one>, <&kp FR_LBRC>;
-//     mods = <(MOD_RSHFT)>;
-// };
-// open: open {
-//     compatible = "zmk,behavior-mod-morph";
-//     label = "OPEN";
-//     #binding-cells = <0>;
-//     bindings = <&open_two>, <&kp FR_LABK>;
-//     mods = <(MOD_LALT)>;
-// };
+open_one: open_one {
+    compatible = "zmk,behavior-mod-morph";
+    label = "OPEN_ONE";
+    #binding-cells = <0>;
+    bindings = <&kp FR_LPRN>, <&kp FR_LCBR>;
+    mods = <(MOD_LSHFT)>;
+};
+open_two: open_two {
+    compatible = "zmk,behavior-mod-morph";
+    label = "OPEN_TWO";
+    #binding-cells = <0>;
+    bindings = <&open_one>, <&kp FR_LBRC>;
+    mods = <(MOD_RSHFT)>;
+};
+open: open {
+    compatible = "zmk,behavior-mod-morph";
+    label = "OPEN";
+    #binding-cells = <0>;
+    bindings = <&open_two>, <&kp FR_LABK>;
+    mods = <(MOD_LALT)>;
+};
 
 // // key lshift rshift alt
 // //  )     }     ]     >
