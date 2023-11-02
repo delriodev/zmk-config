@@ -40,7 +40,11 @@ base_layer {
      &kp TAB    &kp FR_Q  &kp FR_G &kp FR_M &kp FR_L  &kp FR_W                                                                                   &kp FR_B &kp FR_Y &kp FR_U  &kp FR_V &at      &none
      &upper     &kp FR_D  &kp FR_S &kp FR_T &kp FR_N  &kp FR_R                                                                                   &kp FR_I &kp FR_A &kp FR_E  &kp FR_O &kp FR_H &none
      &lower     &kp FR_Z  &kp FR_X &kp FR_C &kp FR_F  &kp FR_J  &mt LCTRL ESC   &mt LGUI DEL        &none          &slashes  &apos   &dashes  &kp FR_K &kp FR_P &commas   &periods &french_e  &none
+<<<<<<< HEAD
      &none      &left     &down    &up      &right              &mt LSHFT FR_SPACE &mt RSHFT BACKSPACE &mt LALT RET   &mark     &open   &close            &none    &math     &none    &none    &none
+=======
+     &none      &left     &down    &up      &right              &mt LSHFT SPACE &mt RSHFT BACKSPACE &mt LALT RET   &mark     &open   &close            &none    &math     &none    &none    &none
+>>>>>>> refs/remotes/origin/main
             >;
         };
 
