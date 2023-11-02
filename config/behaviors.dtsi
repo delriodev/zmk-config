@@ -17,6 +17,71 @@ upper: tap_dance_1 {
     bindings = <&mo 2>, <&to 2>;
 };
 
+// key lshift rshift alt
+//  (     {     [     <
+open1: open1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "OPEN1";
+    #binding-cells = <0>;
+    bindings = <&kp FR_LPRN>, <&kp FR_LCBR>;
+    mods = <(MOD_LSHFT)>;
+};
+open2: open2 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "OPEN2";
+    #binding-cells = <0>;
+    bindings = <&open1>, <&kp FR_LBRC>;
+    mods = <(MOD_RSHFT)>;
+};
+open: open {
+    compatible = "zmk,behavior-mod-morph";
+    label = "OPEN";
+    #binding-cells = <0>;
+    bindings = <&open2>, <&kp FR_LABK>;
+    mods = <(MOD_LALT)>;
+};
+
+// key lshift rshift alt
+//  )     }     ]     >
+close1: close1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "CLOSE1";
+    #binding-cells = <0>;
+    bindings = <&kp FR_RPRN>, <&kp FR_RCBR>;
+    mods = <(MOD_LSHFT)>;
+};
+close2: close2 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "CLOSE2";
+    #binding-cells = <0>;
+    bindings = <&close1>, <&kp FR_RBRC>;
+    mods = <(MOD_RSHFT)>;
+};
+close: close {
+    compatible = "zmk,behavior-mod-morph";
+    label = "CLOSE";
+    #binding-cells = <0>;
+    bindings = <&close2>, <&kp FR_RABK>;
+    mods = <(MOD_LALT)>;
+};
+
+// key lshift rshift alt
+//  ?     !     &     
+mark1: mark1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "MARK1";
+    #binding-cells = <0>;
+    bindings = <&kp FR_QUES>, <&kp FR_EXLM>;
+    mods = <(MOD_LSHFT)>;
+};
+mark: mark {
+    compatible = "zmk,behavior-mod-morph";
+    label = "MARK";
+    #binding-cells = <0>;
+    bindings = <&mark1>, <&kp FR_AMPR>;
+    mods = <(MOD_RSHFT)>;
+};
+
 marks: marks {
     compatible = "zmk,behavior-mod-morph";
     label = "MARKS";
