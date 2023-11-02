@@ -123,6 +123,46 @@ apos: apos {
     mods = <(MOD_LALT)>;
 };
 
+// key lshift rshift alt
+//  /     \     |     
+slashes_one: slashes_one {
+    compatible = "zmk,behavior-mod-morph";
+    label = "SLASHES_one";
+    #binding-cells = <0>;
+    bindings = <&kp FR_SLSH>, <&kp FR_BSLS>;
+    mods = <(MOD_LSFT)>;
+};
+slashes: slashes {
+    compatible = "zmk,behavior-mod-morph";
+    label = "SLASHES";
+    #binding-cells = <0>;
+    bindings = <&slashes_one>, <&kp FR_PIPE>;
+    mods = <(MOD_RSFT)>;
+};
+
+// key lshift rshift alt
+//  é     ç     ¨     ~
+french_one: french_one {
+    compatible = "zmk,behavior-mod-morph";
+    label = "FRENCH_one";
+    #binding-cells = <0>;
+    bindings = <&kp FR_RPRN>, <&kp FR_RCBR>;
+    mods = <(MOD_LSFT)>;
+};
+french_two: french_two {
+    compatible = "zmk,behavior-mod-morph";
+    label = "FRENCH_two";
+    #binding-cells = <0>;
+    bindings = <&french_one>, <&kp FR_RBRC>;
+    mods = <(MOD_RSFT)>;
+};
+french: french {
+    compatible = "zmk,behavior-mod-morph";
+    label = "FRENCH";
+    #binding-cells = <0>;
+    bindings = <&french_two>, <&kp FR_RABK>;
+    mods = <(MOD_LALT)>;
+};
     
 dashes_plus: dashes_plus {
     compatible = "zmk,behavior-mod-morph";
@@ -180,15 +220,6 @@ at: at {
     mods = <(MOD_LSFT)>;
 };
 
-// =  or  _ (shift)  or  - (left alt)       
-slashes: slashes {
-    compatible = "zmk,behavior-mod-morph";
-    label = "SLASHES";
-    #binding-cells = <0>;
-    bindings = <&kp SLASH>, <&kp BACKSLASH>;
-    mods = <(MOD_LSFT)>;
-};
-    
 arrows: arrows {
     compatible = "zmk,behavior-mod-morph";
     label = "ARROWS";
