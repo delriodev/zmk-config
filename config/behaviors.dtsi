@@ -65,22 +65,22 @@ close: close {
     mods = <(MOD_LALT)>;
 };
 
-// // key lshift rshift alt
-// //  ?     !     &     
-// mark1: mark1 {
-//     compatible = "zmk,behavior-mod-morph";
-//     label = "MARK1";
-//     #binding-cells = <0>;
-//     bindings = <&kp FR_QUES>, <&kp FR_EXLM>;
-//     mods = <(MOD_LSHFT)>;
-// };
-// mark: mark {
-//     compatible = "zmk,behavior-mod-morph";
-//     label = "MARK";
-//     #binding-cells = <0>;
-//     bindings = <&mark1>, <&kp FR_AMPR>;
-//     mods = <(MOD_RSHFT)>;
-// };
+// key lshift rshift alt
+//  ?     !     &     
+mark_one: mark_one {
+    compatible = "zmk,behavior-mod-morph";
+    label = "MARK_one";
+    #binding-cells = <0>;
+    bindings = <&kp FR_QUES>, <&kp FR_EXLM>;
+    mods = <(MOD_LSHFT)>;
+};
+mark: mark {
+    compatible = "zmk,behavior-mod-morph";
+    label = "MARK";
+    #binding-cells = <0>;
+    bindings = <&mark_one>, <&kp FR_AMPR>;
+    mods = <(MOD_RSHFT)>;
+};
 
 marks: marks {
     compatible = "zmk,behavior-mod-morph";
