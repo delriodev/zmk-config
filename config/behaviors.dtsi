@@ -23,14 +23,14 @@ open_one: open_one {
     compatible = "zmk,behavior-mod-morph";
     label = "OPEN_ONE";
     #binding-cells = <0>;
-    bindings = <&kp FR_LPRN>, <&kp FR_LCBR>;
+    bindings = <&kp QUESTION>, <&kp QUESTION>;
     mods = <(MOD_LSFT)>;
 };
 open_two: open_two {
     compatible = "zmk,behavior-mod-morph";
     label = "OPEN_TWO";
     #binding-cells = <0>;
-    bindings = <&open_one>, <&kp FR_LBRC>;
+    bindings = <&open_one>, <&kp QUESTION>;
     mods = <(MOD_LALT)>;
 };
 // open: open {
