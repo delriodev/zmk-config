@@ -82,13 +82,23 @@ mark: mark {
     mods = <(MOD_RSFT)>;
 };
 
-marks: marks {
+// key lshift rshift alt
+//  =     _     -     
+dashes_one: dashes_one {
     compatible = "zmk,behavior-mod-morph";
-    label = "MARKS";
+    label = "DASHES_one";
     #binding-cells = <0>;
-    bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+    bindings = <&kp FR_EQL>, <&kp FR_UNDS>;
     mods = <(MOD_LSFT)>;
 };
+dashes: dashes {
+    compatible = "zmk,behavior-mod-morph";
+    label = "dashes";
+    #binding-cells = <0>;
+    bindings = <&dashes_one>, <&kp FR_MINS>;
+    mods = <(MOD_RSFT)>;
+};
+
 
 apos: apos {
     compatible = "zmk,behavior-mod-morph";
@@ -98,13 +108,6 @@ apos: apos {
     mods = <(MOD_LSFT)>;
 };
     
-dashes: dashes {
-    compatible = "zmk,behavior-mod-morph";
-    label = "DASHES";
-    #binding-cells = <0>;
-    bindings = <&kp EQUAL>, <&kp UNDERSCORE>;
-    mods = <(MOD_LSFT)>;
-};
 dashes_plus: dashes_plus {
     compatible = "zmk,behavior-mod-morph";
     label = "dashes";

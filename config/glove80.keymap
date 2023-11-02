@@ -37,7 +37,7 @@
     &none      &none    &none    &none            &none          &none                                                                                   &none  &none                &none        &none                &none         &none
     &kp TAB    &kp Q    &kp G    &kp M            &kp L          &kp W                                                                                   &kp B  &kp Y                &kp U        &kp V                &at           &none
     &none      &kp D    &kp S    &kp T            &kp N          &kp R                                                                                   &kp I  &kp A                &kp E        &kp O                &kp H         &none
-    &upper     &kp Z    &kp X    &kp C            &kp F          &kp J  &mt LCTRL RET   &mt LGUI ESC  &none        &marks     &apos    &dashes_plus      &kp K  &kp P                &commas      &periods             &accents      &none
+    &upper     &kp Z    &kp X    &kp C            &kp F          &kp J  &mt LCTRL RET   &mt LGUI ESC  &none        &mark     &apos    &dashes_plus      &kp K  &kp P                &commas      &periods             &accents      &none
     &lower     &left    &down    &up              &right                &mt LSHFT SPACE &kp BACKSPACE &mt LALT DEL &brackets  &braces  &parentheses             &slashes             &arrows      &bools               &chars_fr     &none
             >;
         };
