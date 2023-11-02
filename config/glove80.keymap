@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "keys_fr.h"
 #include "helper.h"
+#include "unicode_fr.dtsi"
 #include <behaviors.dtsi>
 
 / {
