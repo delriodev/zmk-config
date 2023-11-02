@@ -173,12 +173,38 @@ french: french {
     mods = <(MOD_LALT)>;
 };
 
+// key lshift rshift alt
+//  @     #     $      
+at1: at1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "AT1";
+    #binding-cells = <0>;
+    bindings = <&kp FR_AT>, <&kp FR_HASH>;
+    mods = <(MOD_LSHFT)>;
+};
 at: at {
     compatible = "zmk,behavior-mod-morph";
     label = "AT";
     #binding-cells = <0>;
-    bindings = <&kp AT>, <&kp POUND>;
+    bindings = <&at1>, <&kp FR_DLR>;
+    mods = <(MOD_RSHFT)>;
+};
+
+// key lshift rshift alt
+//  *     +     %      
+math1: math1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "MATH1";
+    #binding-cells = <0>;
+    bindings = <&kp FR_ASTR>, <&kp FR_PLUS>;
     mods = <(MOD_LSHFT)>;
+};
+math: math {
+    compatible = "zmk,behavior-mod-morph";
+    label = "MATH";
+    #binding-cells = <0>;
+    bindings = <&math1>, <&kp FR_PERC>;
+    mods = <(MOD_RSHFT)>;
 };
 
 commas: commas {
