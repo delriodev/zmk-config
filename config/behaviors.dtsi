@@ -23,23 +23,23 @@ open_one: open_one {
     compatible = "zmk,behavior-mod-morph";
     label = "OPEN_ONE";
     #binding-cells = <0>;
-    bindings = <&kp QUESTION>, <&kp QUESTION>;
+    bindings = <&kp FR_LPRN>, <&kp FR_LCBR>;
     mods = <(MOD_LSFT)>;
 };
 open_two: open_two {
     compatible = "zmk,behavior-mod-morph";
     label = "OPEN_TWO";
     #binding-cells = <0>;
-    bindings = <&open_one>, <&kp QUESTION>;
+    bindings = <&open_one>, <&kp FR_LBRC>;
     mods = <(MOD_RSFT)>;
 };
-// open: open {
-//     compatible = "zmk,behavior-mod-morph";
-//     label = "OPEN";
-//     #binding-cells = <0>;
-//     bindings = <&open_two>, <&kp FR_LABK>;
-//     mods = <(MOD_LALT)>;
-// };
+open: open {
+    compatible = "zmk,behavior-mod-morph";
+    label = "OPEN";
+    #binding-cells = <0>;
+    bindings = <&open_two>, <&kp FR_LABK>;
+    mods = <(MOD_LALT)>;
+};
 
 // // key lshift rshift alt
 // //  )     }     ]     >
