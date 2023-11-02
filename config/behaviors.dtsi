@@ -144,21 +144,21 @@ slashes: slashes {
 //  é     ç     ¨     ~
 french1: french1 {
     compatible = "zmk,behavior-mod-morph";
-    label = "FRENCH1";
+    label = "french1";
     #binding-cells = <0>;
     bindings = <&kp FR_RPRN>, <&kp FR_RCBR>;
     mods = <(MOD_LSFT)>;
 };
 french2: french2 {
     compatible = "zmk,behavior-mod-morph";
-    label = "FRENCH2";
+    label = "french2";
     #binding-cells = <0>;
     bindings = <&french1>, <&kp FR_RBRC>;
     mods = <(MOD_RSFT)>;
 };
 french: french {
     compatible = "zmk,behavior-mod-morph";
-    label = "FRENCH";
+    label = "french";
     #binding-cells = <0>;
     bindings = <&french2>, <&kp FR_RABK>;
     mods = <(MOD_LALT)>;
@@ -178,6 +178,14 @@ bools: bools {
     label = "BOOLS";
     #binding-cells = <0>;
     bindings = <&kp AMPERSAND>, <&kp PIPE>;
+    mods = <(MOD_LSFT)>;
+};
+    
+accents: accents {
+    compatible = "zmk,behavior-mod-morph";
+    label = "ACCENTS";
+    #binding-cells = <0>;
+    bindings = <&kp GRAVE>, <&kp CARET>;
     mods = <(MOD_LSFT)>;
 };
     
