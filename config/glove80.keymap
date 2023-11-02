@@ -22,7 +22,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
-
+#include "keys_fr.h"
 
 / {
     /* Glove80 system behavior & macros */
@@ -51,12 +51,12 @@
 
         base_layer {
             bindings = <
-     &magic 2 0 &kp CAPS &none &none &none                                                                                                 &none &none   &none    &none &none
-     &none      &none    &none &none &none  &none                                                                                    &none &none &none   &none    &none &none
-     &kp TAB    &kp Q    &kp G &kp M &kp L  &kp W                                                                                    &kp B &kp Y &kp U   &kp V    &none &none
-     &none      &kp D    &kp S &kp T &kp N  &kp R                                                                                    &kp I &kp A &kp E   &kp O    &kp H &none
-     &upper     &kp Z    &kp X &kp C &kp F  &kp J  &mt LCTRL ESC   &mt LGUI DEL        &none        &marks     &apos    &dashes_plus &kp K &kp P &commas &periods &none &none
-     &lower     &left    &down &up   &right        &mt LSHFT SPACE &mt RSHFT BACKSPACE &mt LALT RET &brackets  &braces  &parentheses       &none &none   &none    &none &none
+     &magic 2 0 &kp CAPS &none &none &none                                                                                                          &none &none   &none    &none &none
+     &none      &none    &none &none &none  &none                                                                                          &none    &none &none   &none    &none &none
+     &kp TAB    &kp FR_Q  &kp FR_G &kp FR_M &kp FR_L  &kp FR_W                                                                             &kp FR_B &kp FR_Y &kp FR_U   &kp FR_V    &none &none
+     &upper     &kp FR_D  &kp FR_S &kp FR_T &kp FR_N  &kp FR_R                                                                             &kp FR_I &kp FR_A &kp FR_E   &kp FR_O    &kp FR_H &none
+     &lower     &kp FR_Z  &kp FR_X &kp FR_C &kp FR_F  &kp FR_J  &mt LCTRL ESC   &mt LGUI DEL        &none          &none  &apos   &dashes  &kp FR_K &kp FR_P &commas    &periods &none &none
+     &none      &left     &down    &up      &right              &mt LSHFT SPACE &mt RSHFT BACKSPACE &mt LALT RET   &mark  &open   &close            &none &none   &none    &none &none
             >;
         };
 
