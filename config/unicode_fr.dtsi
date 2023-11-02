@@ -2,9 +2,9 @@ ZMK_UNICODE_PAIR(CCed,		FR_N0, FR_N0,    E, FR_N7,		FR_N0, FR_N0,    C, FR_N7)	/
 ZMK_UNICODE_PAIR(EAig,		FR_N0, FR_N0,    E, FR_N9,		FR_N0, FR_N0,    C, FR_N9)	// é/É
 ZMK_UNICODE_PAIR(LfPLfB,	FR_N0, FR_N0, FR_N2, FR_N8,		FR_N0, FR_N0, FR_N5,    B)	// ({
 ZMK_UNICODE_PAIR(RgPRgB,	FR_N0, FR_N0, FR_N2, FR_N9,		FR_N0, FR_N0, FR_N5,    D) // 
-ZMK_UNICODE_PAIR(EGr,		FR_0, FR_0,    E, FR_8,		FR_0, FR_0,    C, FR_8)	// è/È
-ZMK_UNICODE_PAIR(UGr,		FR_0, FR_0,    F, FR_9,		FR_0, FR_0,    D, FR_9)	// ù/Ù
-ZMK_UNICODE_PAIR(AGr,		FR_0, FR_0,    E, FR_0,		FR_0, FR_0,    C, FR_0)	// à/À
+ZMK_UNICODE_PAIR(EGr,		FR_N0, FR_N0,    E, FR_N8,		FR_N0, FR_N0,    C, FR_N8)	// è/È
+ZMK_UNICODE_PAIR(UGr,		FR_N0, FR_N0,    F, FR_N9,		FR_N0, FR_N0,    D, FR_N9)	// ù/Ù
+ZMK_UNICODE_PAIR(AGr,		FR_N0, FR_N0,    E, FR_N0,		FR_N0, FR_N0,    C, FR_N0)	// à/À
 
 ZMK_UNICODE_SINGLE(Inf,		FR_N0, FR_N0, FR_N3,    C) 							// <
 ZMK_UNICODE_SINGLE(Sup,		FR_N0, FR_N0, FR_N3,    E) 							// >
