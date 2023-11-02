@@ -31,7 +31,7 @@ open_two: open_two {
     label = "OPEN_TWO";
     #binding-cells = <0>;
     bindings = <&open_one>, <&kp FR_LBRC>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_RSFT)>;
 };
 open: open {
     compatible = "zmk,behavior-mod-morph";
