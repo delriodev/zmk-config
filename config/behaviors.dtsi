@@ -1,11 +1,3 @@
-magic: magic_hold_tap {
-    compatible = "zmk,behavior-hold-tap";
-    label = "MAGIC_HOLD_TAP";
-    #binding-cells = <2>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo>, <&rgb_ug_status_macro>;
-};
 
 // hold or toggle layer 1   
 lower: tap_dance_0 {
@@ -77,196 +69,40 @@ close: close {
 //  ?     !     &     
 mark_one: mark_one {
     compatible = "zmk,behavior-mod-morph";
-    label = "MARK_one";
+    label = "MARK_ONE";
     #binding-cells = <0>;
     bindings = <&kp FR_QUES>, <&kp FR_EXLM>;
-    mods = <(MOD_LSFT)>;
+    mods = <(MOD_LSHFT)>;
 };
 mark: mark {
     compatible = "zmk,behavior-mod-morph";
     label = "MARK";
     #binding-cells = <0>;
     bindings = <&mark_one>, <&kp FR_AMPR>;
-    mods = <(MOD_RSFT)>;
+    mods = <(MOD_RSHFT)>;
 };
-
-
-
-// key lshift rshift alt
-//  =     _     -     
-dashes_one: dashes_one {
-    compatible = "zmk,behavior-mod-morph";
-    label = "DASHES_one";
-    #binding-cells = <0>;
-    bindings = <&kp FR_EQL>, <&kp FR_UNDS>;
-    mods = <(MOD_LSFT)>;
-};
-dashes: dashes {
-    compatible = "zmk,behavior-mod-morph";
-    label = "dashes";
-    #binding-cells = <0>;
-    bindings = <&dashes_one>, <&kp FR_MINS>;
-    mods = <(MOD_RSFT)>;
-};
-
-// key lshift rshift alt
-//  "     '     `     ^
-apos_one: apos_one {
-    compatible = "zmk,behavior-mod-morph";
-    label = "APOS_one";
-    #binding-cells = <0>;
-    bindings = <&kp FR_DQUO>, <&kp FR_QUOT>;
-    mods = <(MOD_LSFT)>;
-};
-apos_two: apos_two {
-    compatible = "zmk,behavior-mod-morph";
-    label = "APOS_two";
-    #binding-cells = <0>;
-    bindings = <&apos_one>, <&kp FR_GRV>;
-    mods = <(MOD_RSFT)>;
-};
-apos: apos {
-    compatible = "zmk,behavior-mod-morph";
-    label = "APOS";
-    #binding-cells = <0>;
-    bindings = <&apos_two>, <&kp FR_CIRC>;
-    mods = <(MOD_LALT)>;
-};
-
-// key lshift rshift alt
-//  /     \     |     
-slashes_one: slashes_one {
-    compatible = "zmk,behavior-mod-morph";
-    label = "SLASHES_one";
-    #binding-cells = <0>;
-    bindings = <&kp FR_SLSH>, <&kp FR_BSLS>;
-    mods = <(MOD_LSFT)>;
-};
-slashes: slashes {
-    compatible = "zmk,behavior-mod-morph";
-    label = "SLASHES";
-    #binding-cells = <0>;
-    bindings = <&slashes_one>, <&kp FR_PIPE>;
-    mods = <(MOD_RSFT)>;
-};
-
-// key lshift rshift alt
-//  é     ç     ¨     ~
-french_one: french_one {
-    compatible = "zmk,behavior-mod-morph";
-    label = "FRENCH_one";
-    #binding-cells = <0>;
-    bindings = <&kp FR_RPRN>, <&kp FR_RCBR>;
-    mods = <(MOD_LSFT)>;
-};
-french_two: french_two {
-    compatible = "zmk,behavior-mod-morph";
-    label = "FRENCH_two";
-    #binding-cells = <0>;
-    bindings = <&french_one>, <&kp FR_RBRC>;
-    mods = <(MOD_RSFT)>;
-};
-french: french {
-    compatible = "zmk,behavior-mod-morph";
-    label = "FRENCH";
-    #binding-cells = <0>;
-    bindings = <&french_two>, <&kp FR_RABK>;
-    mods = <(MOD_LALT)>;
-};
-
-// key lshift rshift alt
-//  @     #     $      
-at_one: at_one {
-    compatible = "zmk,behavior-mod-morph";
-    label = "AT_one";
-    #binding-cells = <0>;
-    bindings = <&kp FR_AT>, <&kp FR_HASH>;
-    mods = <(MOD_LSFT)>;
-};
-at: at {
-    compatible = "zmk,behavior-mod-morph";
-    label = "AT";
-    #binding-cells = <0>;
-    bindings = <&at_one>, <&kp FR_DLR>;
-    mods = <(MOD_RSFT)>;
-};
-
-// key lshift rshift alt
-//  *     +     %      
-math_one: math_one {
-    compatible = "zmk,behavior-mod-morph";
-    label = "MATH_one";
-    #binding-cells = <0>;
-    bindings = <&kp FR_ASTR>, <&kp FR_PLUS>;
-    mods = <(MOD_LSFT)>;
-};
-math: math {
-    compatible = "zmk,behavior-mod-morph";
-    label = "MATH";
-    #binding-cells = <0>;
-    bindings = <&math_one>, <&kp FR_PERC>;
-    mods = <(MOD_RSFT)>;
-};
-
-commas: commas {
-    compatible = "zmk,behavior-mod-morph";
-    label = "COMMAS";
-    #binding-cells = <0>;
-    bindings = <&kp FR_COMM>, <&kp FR_SCLN>;
-    mods = <(MOD_LSFT)>;
-};
-    
-periods: periods {
-    compatible = "zmk,behavior-mod-morph";
-    label = "PERIODS";
-    #binding-cells = <0>;
-    bindings = <&kp FR_DOT>, <&kp FR_COLN>;
-    mods = <(MOD_LSFT)>;
-};
-
-left: left {
-    compatible = "zmk,behavior-mod-morph";
-    label = "LEFT";
-    #binding-cells = <0>;
-    bindings = <&kp LEFT>, <&kp HOME>;
-    mods = <(MOD_LALT)>;
-};
-    
-right: right {
-    compatible = "zmk,behavior-mod-morph";
-    label = "RIGHT";
-    #binding-cells = <0>;
-    bindings = <&kp RIGHT>, <&kp END>;
-    mods = <(MOD_LALT)>;
-};
-    
-up: up {
-    compatible = "zmk,behavior-mod-morph";
-    label = "UP";
-    #binding-cells = <0>;
-    bindings = <&kp UP>, <&kp PG_UP>;
-    mods = <(MOD_LALT)>;
-};
-    
-down: down {
-    compatible = "zmk,behavior-mod-morph";
-    label = "DOWN";
-    #binding-cells = <0>;
-    bindings = <&kp DOWN>, <&kp PG_DN>;
-    mods = <(MOD_LALT)>;
-};
-
-
-
-
-
-
 
 marks: marks {
     compatible = "zmk,behavior-mod-morph";
     label = "MARKS";
     #binding-cells = <0>;
     bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+    mods = <(MOD_LSFT)>;
+};
+
+apos: apos {
+    compatible = "zmk,behavior-mod-morph";
+    label = "APOS";
+    #binding-cells = <0>;
+    bindings = <&kp DOUBLE_QUOTES>, <&kp APOSTROPHE>;
+    mods = <(MOD_LSFT)>;
+};
+    
+dashes: dashes {
+    compatible = "zmk,behavior-mod-morph";
+    label = "DASHES";
+    #binding-cells = <0>;
+    bindings = <&kp EQUAL>, <&kp UNDERSCORE>;
     mods = <(MOD_LSFT)>;
 };
 dashes_plus: dashes_plus {
@@ -301,6 +137,39 @@ parentheses: parentheses {
     mods = <(MOD_LSFT)>;
 };
     
+commas: commas {
+    compatible = "zmk,behavior-mod-morph";
+    label = "COMMAS";
+    #binding-cells = <0>;
+    bindings = <&kp COMMA>, <&kp SEMICOLON>;
+    mods = <(MOD_LSFT)>;
+};
+    
+periods: periods {
+    compatible = "zmk,behavior-mod-morph";
+    label = "PERIODS";
+    #binding-cells = <0>;
+    bindings = <&kp PERIOD>, <&kp COLON>;
+    mods = <(MOD_LSFT)>;
+};
+    
+at: at {
+    compatible = "zmk,behavior-mod-morph";
+    label = "AT";
+    #binding-cells = <0>;
+    bindings = <&kp AT>, <&kp POUND>;
+    mods = <(MOD_LSFT)>;
+};
+
+// =  or  _ (shift)  or  - (left alt)       
+slashes: slashes {
+    compatible = "zmk,behavior-mod-morph";
+    label = "SLASHES";
+    #binding-cells = <0>;
+    bindings = <&kp SLASH>, <&kp BACKSLASH>;
+    mods = <(MOD_LSFT)>;
+};
+    
 arrows: arrows {
     compatible = "zmk,behavior-mod-morph";
     label = "ARROWS";
@@ -331,4 +200,36 @@ chars_fr: chars_fr {
     #binding-cells = <0>;
     bindings = <&kp CARET>, <&kp CARET>;
     mods = <(MOD_LSFT)>;
+};
+    
+left: left {
+    compatible = "zmk,behavior-mod-morph";
+    label = "LEFT";
+    #binding-cells = <0>;
+    bindings = <&kp LEFT>, <&kp HOME>;
+    mods = <(MOD_LALT)>;
+};
+    
+right: right {
+    compatible = "zmk,behavior-mod-morph";
+    label = "RIGHT";
+    #binding-cells = <0>;
+    bindings = <&kp RIGHT>, <&kp END>;
+    mods = <(MOD_LALT)>;
+};
+    
+up: up {
+    compatible = "zmk,behavior-mod-morph";
+    label = "UP";
+    #binding-cells = <0>;
+    bindings = <&kp UP>, <&kp PG_UP>;
+    mods = <(MOD_LALT)>;
+};
+    
+down: down {
+    compatible = "zmk,behavior-mod-morph";
+    label = "DOWN";
+    #binding-cells = <0>;
+    bindings = <&kp DOWN>, <&kp PG_DN>;
+    mods = <(MOD_LALT)>;
 };
