@@ -33,13 +33,13 @@ open_two: open_two {
     bindings = <&open_one>, <&kp FR_LBRC>;
     mods = <(MOD_RSFT)>;
 };
-open: open {
-    compatible = "zmk,behavior-mod-morph";
-    label = "OPEN";
-    #binding-cells = <0>;
-    bindings = <&open_two>, <&kp FR_LABK>;
-    mods = <(MOD_LALT)>;
-};
+// open: open {
+//     compatible = "zmk,behavior-mod-morph";
+//     label = "OPEN";
+//     #binding-cells = <0>;
+//     bindings = <&open_two>, <&kp FR_LABK>;
+//     mods = <(MOD_LALT)>;
+// };
 
 // // key lshift rshift alt
 // //  )     }     ]     >
