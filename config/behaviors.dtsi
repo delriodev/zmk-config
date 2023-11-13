@@ -43,18 +43,25 @@ open: open {
 
 // key lshift rshift alt
 //  )     }     ]     >
+close_one: close_one {
+    compatible = "zmk,behavior-mod-morph";
+    label = "CLOSE_ONE";
+    #binding-cells = <0>;
+    bindings = <&kp FR_RIGHT_PARENTHESIS>, <&kp FR_RIGHT_BRACE>;
+    mods = <(MOD_LSFT)>;
+};
 close_two: close_two {
     compatible = "zmk,behavior-mod-morph";
     label = "CLOSE_ONE";
     #binding-cells = <0>;
-    bindings = <&LfPLfB>, <&kp FR_RIGHT_BRACKET>;
+    bindings = <&close_one>, <&kp FR_RIGHT_BRACKET>;
     mods = <(MOD_RSFT)>;
 };
 close: close {
     compatible = "zmk,behavior-mod-morph";
     label = "CLOSE";
     #binding-cells = <0>;
-    bindings = <&close_two>, <&Sup>;
+    bindings = <&close_two>, <&kp FR_GREATER_THAN>;
     mods = <(MOD_LALT)>;
 };
 
@@ -105,7 +112,7 @@ apos_two: apos_two {
     compatible = "zmk,behavior-mod-morph";
     label = "APOS_two";
     #binding-cells = <0>;
-    bindings = <&apos_one>, <&BakQut>;
+    bindings = <&apos_one>, <&kp FR_GRAVE>;
     mods = <(MOD_RSFT)>;
 };
 apos: apos {
@@ -135,11 +142,21 @@ slashes: slashes {
 
 // key lshift rshift alt
 //  é                 ~
-tilde: tilde {
+french_e: french_e {
     compatible = "zmk,behavior-mod-morph";
-    label = "tilde";
+    label = "FRENCH_E";
     #binding-cells = <0>;
-    bindings = <&kp FR_TILDE>, <&kp FR_UMLAUT>;
+    bindings = <&kp FR_E_ACUTE>, <&kp FR_TILDE>;
+    mods = <(MOD_LALT)>;
+};
+
+// key lshift rshift alt
+//  é                 ¨
+french_c: french_c {
+    compatible = "zmk,behavior-mod-morph";
+    label = "FRENCH_C";
+    #binding-cells = <0>;
+    bindings = <&kp FR_C_CEDILLA>, <&kp FR_UMLAUT>;
     mods = <(MOD_LALT)>;
 };
 
