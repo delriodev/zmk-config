@@ -105,7 +105,7 @@ apos_two: apos_two {
     compatible = "zmk,behavior-mod-morph";
     label = "APOS_two";
     #binding-cells = <0>;
-    bindings = <&apos_one>, <&FR_GRAVE>;
+    bindings = <&apos_one>, <&BakQut>;
     mods = <(MOD_RSFT)>;
 };
 apos: apos {
